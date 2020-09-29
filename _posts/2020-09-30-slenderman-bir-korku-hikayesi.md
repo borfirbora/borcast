@@ -10,7 +10,6 @@ length: "1110"
 explicit: "no" 
 keywords: "Slenderman, korku, oyun, podcast"
 block: "no" 
-voices: "Bora Fırlangeç"
 ---
 
 Bu muhteşem oyunda neler olacak neler... Haydi bir bakalım!
