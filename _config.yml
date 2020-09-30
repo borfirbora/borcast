@@ -21,5 +21,6 @@ include: ['_pages']
 # Build settings
 markdown: kramdown
 
+paginate: 3
 #Exclude local build settings
 exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']

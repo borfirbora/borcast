@@ -22,7 +22,7 @@ layout: default
         </div>            
         </div>
     
-    {% for post in site.posts offset:1 %}
+    {% for post in paginator.posts offset:1 %}
         <div class="cards">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -32,7 +32,21 @@ layout: default
         <a href="{{ post.file }}" class="button button-primary" download="{{ post.title }}">{{ post.title }} bölümünü indir</a>    
     </div>
     {% endfor %}
-    
+    {% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Daha Yeni Bölümler</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Daha Eski Bölümler &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+
 </div>
 
 <div class="container center-content extra-padding">
