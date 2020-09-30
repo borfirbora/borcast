@@ -22,5 +22,10 @@ include: ['_pages']
 markdown: kramdown
 
 paginate: 3
+
+plugins:
+  - jekyll-paginate
+
+
 #Exclude local build settings
 exclude: ['readme.md', 'Gemfile.lock', 'Gemfile']
