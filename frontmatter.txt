@@ -4,11 +4,11 @@
 ---
 layout: post
 title: ""
-date: yyyy-aa-gg ss:dd:ss +3000
+date: -- :: +3000
 file: 
 summary: ""
 description: ""
-duration: "dd:ss" 
+duration: ":" 
 length: ""
 explicit: "no" 
 keywords: ""
