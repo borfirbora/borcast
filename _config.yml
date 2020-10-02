@@ -10,7 +10,7 @@ url: "https://borfirbora.com" # the base hostname & protocol for your site
 twitter_username: borfirbora
 github_username: borfirbora
 
-permalink: /bolum/:title.html
+permalink: /:title
 
 #Timezone
 timezone: Europe/Istanbul
